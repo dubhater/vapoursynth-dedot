@@ -548,7 +548,7 @@ static const VSFrameRef *VS_CC dedotGetFrame(int n, int activationReason, void *
 
         if (d->process[0]) {
             int width = vsapi->getFrameWidth(srcC, 0);
-            int height = vsapi->getFrameWidth(srcC, 0);
+            int height = vsapi->getFrameHeight(srcC, 0);
             int stride = vsapi->getStride(srcC, 0);
 
             const uint8_t *pPP = vsapi->getReadPtr(srcPP, 0) + 2 * stride;
